@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>results.md — S3 upload benchmark</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <h1>results.md</h1>
+        <p class="pills">
+          <span class="pill"><strong><%= bucket %></strong></span>
+          <span class="pill">appended on every run</span>
+        </p>
+      </div>
+      <a class="ghost-btn" href="/">← back to benchmark</a>
+    </header>
+
+    <main>
+      <section class="card">
+        <pre class="log results-raw"><%= markdown || "No runs recorded yet." %></pre>
+      </section>
+    </main>
+  </body>
+</html>
